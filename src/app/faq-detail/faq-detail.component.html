@@ -1,0 +1,22 @@
+<ion-content>
+  <ion-grid fixed='true'>
+  <ion-col size='3'>
+    <ion-button color='light' routerLink='/lawyerlist'>
+  <ion-icon slot="start" icon='{{arrowBackOutline}}'></ion-icon>
+  Back
+</ion-button>
+  </ion-col>
+  <ion-col size='9'>
+    <app-my-header
+></app-my-header>
+  </ion-col>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{selectedFaq.title}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{selectedFaq.answer}}
+    </ion-card-content>
+  </ion-card>
+</ion-grid>
+</ion-content>

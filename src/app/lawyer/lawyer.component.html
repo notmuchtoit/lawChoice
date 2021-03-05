@@ -1,0 +1,15 @@
+
+<ion-content>
+  <ion-grid fixed='true'>
+    <app-my-header></app-my-header>
+    <ion-row class='ion-padding-top'>
+      <ion-col size='6' *ngFor="let lawyer of lawyers">
+        <ion-item  button routerLink='{{lawyer.path}}'>
+        <ion-avatar slot='start' ><ion-img src='{{lawyer.pic}}'></ion-img></ion-avatar>
+        <ion-label><h2>{{lawyer.name}}</h2><h3>{{lawyer.focus}}</h3><p>{{lawyer.phone}}</p>
+          </ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

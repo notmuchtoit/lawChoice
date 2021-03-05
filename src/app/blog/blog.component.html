@@ -1,0 +1,18 @@
+
+<ion-content>
+  <ion-grid fixed='true'>
+    <app-my-header></app-my-header>
+    <ion-row class='ion-padding-top'>
+      <ion-col size='6' *ngFor="let blog of blogPosts">
+        <ion-item  button routerLink='{{blog.path}}' lines='none'>
+          <ion-img class='blogImage' src='{{blog.pic}}'></ion-img>
+        </ion-item>
+        <ion-item lines='none'>
+          <ion-label class="ion-text-center"><h2>{{blog.title}}</h2></ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+</ion-content>

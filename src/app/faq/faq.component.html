@@ -1,0 +1,18 @@
+
+<ion-content>
+  <ion-grid fixed='true'>
+    <app-my-header></app-my-header>
+    <ion-row>
+      <ion-label>
+        <h1>FAQ</h1>
+      </ion-label>
+    </ion-row>
+    <ion-row *ngFor="let faq of faqs">
+      <ion-item  button routerLink='{{faq.path}}' lines='none'>
+        <ion-icon slot='start' icon='{{informationCircleOutline}}'></ion-icon>
+        <ion-label>{{faq.title}}</ion-label>
+      </ion-item>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

@@ -1,3 +1,39 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu side="start" menuId="first" contentId="main">
+    <ion-content>
+      <ion-list>
+        <ion-item button routerLink="/home">
+          <ion-label class="ion-text-center">
+            <strong>LawChoice</strong>
+          </ion-label>
+        </ion-item>
+        <ion-item button routerLink="/about">
+          <ion-label class="ion-text-center">
+            ABOUT US
+          </ion-label>
+        </ion-item>
+        <ion-item button routerLink="/contact">
+          <ion-label class="ion-text-center">
+            CONTACT US
+          </ion-label>
+        </ion-item>
+        <ion-item button routerLink="/lawyerlist">
+          <ion-label class="ion-text-center">
+            LAWYERS
+          </ion-label>
+        </ion-item>
+        <ion-item button routerLink="/blog">
+          <ion-label class="ion-text-center">
+            BLOG
+          </ion-label>
+        </ion-item>
+        <ion-item button routerLink="/faq">
+          <ion-label class="ion-text-center">
+            FAQ
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id='main'></ion-router-outlet>
 </ion-app>

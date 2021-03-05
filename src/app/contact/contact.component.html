@@ -1,0 +1,42 @@
+
+<ion-content>
+
+  <ion-grid fixed='true' class='ion-text-center'>
+    <app-my-header></app-my-header>
+    <form [formGroup]="contactForm" >
+      <ion-row >
+        <ion-col>
+          <input placeholder="Name" formControlName="name"/>
+        </ion-col>
+        <ion-col>
+          <input placeholder="Email" formControlName="email"/>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+            <textarea rows="15" placeholder="Enter message here" formControlName="message"></textarea>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-center">
+        <ion-item button (click)='onFormSubmit()'>
+          <ion-label class="ion-text-center">
+              Send Message
+          </ion-label>
+        </ion-item>
+      </ion-row>
+    </form>
+      <ion-row>
+<ion-footer>
+  <ion-toolbar>
+      <ion-title class="ion-text-center">Created by Dream-Makers</ion-title>
+      <ion-title class="ion-text-center" size="small">1313 Mockingbird Lane</ion-title>
+  </ion-toolbar>
+</ion-footer>
+      </ion-row>
+
+
+  </ion-grid>
+
+
+</ion-content>
+
